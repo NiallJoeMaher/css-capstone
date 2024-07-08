@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 1em;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #d1eaff;
+}
+
+/* Article List Styles */
+.article-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.article {
+    background: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 700px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+.article img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.article h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.article h2 a {
+    color: #4a90e2;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.article h2 a:hover {
+    color: #1c6dd0;
+}
+
+.article .author,
+.article .date {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Article Content Styles */
+.article-content {
+    padding: 20px;
+    background: white;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article-content .author-date {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.article-content p {
+    line-height: 1.6;
+    margin: 1em 0;
+    font-size: 1.1em;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .article,
+    .article-content {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}
